@@ -26,7 +26,7 @@
       "title": "Syllabus",
       "subtitle": "All branches syllabus for available here",
       "image": "https://via.placeholder.com/140x100",
-      "linkType": "driveLink",
+      "linkType": "googleDrive",
       "link": "https://cets.apsche.ap.gov.in/ECET/UI/Syllabus.aspx"
     }
   ]
