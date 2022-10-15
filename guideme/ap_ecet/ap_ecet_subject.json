@@ -5,21 +5,21 @@
       "title": "Mathematics",
       "subtitle": "some thing about the thic topic",
       "image": "https://via.placeholder.com/140x100",
-      "linkType": "driveLink",
+      "linkType": "googleDrive",
       "link": "http://google.com"
     },
     {
       "title": "Physics",
       "subtitle": "some thing about the thic topic",
       "image": "https://via.placeholder.com/140x100",
-      "linkType": "driveLink",
+      "linkType": "googleDrive",
       "link": "http://google.com"
     },
     {
       "title": "Chemistry",
       "subtitle": "some thing about the thic topic",
       "image": "https://via.placeholder.com/140x100",
-      "linkType": "driveLink",
+      "linkType": "googleDrive",
       "link": "http://google.com"
     }
   ]
