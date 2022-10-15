@@ -5,12 +5,14 @@
       "title": "question paper 1",
       "subtitle": "some thing about",
       "image": "https://via.placeholder.com/140x100",
+      "linkType:"googleDrive",
       "link": "https://drive.google.com/file/d/1v05HLzEFjFalc5QygCjeKHeDsASITMBX/view?usp=sharing"
     },
     {
       "title": "question paper 2",
       "subtitle": "some thing about",
       "image": "https://via.placeholder.com/140x100",
+      "linkType:"googleDrive",
       "link": "https://drive.google.com/file/d/1v05HLzEFjFalc5QygCjeKHeDsASITMBX/view?usp=sharing"
     }
   ]
