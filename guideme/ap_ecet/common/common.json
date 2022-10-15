@@ -1,0 +1,26 @@
+{
+  "title": "ap ecet",
+  "content": [
+    {
+      "title": "Maths",
+      "subtitle": "some thing about",
+      "image": "https://via.placeholder.com/140x100",
+      "linkType": "common",
+      "link": "http://pavan6476252.github.io/guideme/ap_ecet/ap_ecet_subject.json"
+    },
+    {
+      "title": "cse",
+      "subtitle": "some thing about",
+      "image": "https://via.placeholder.com/140x100",
+      "linkType": "common",
+      "link": "http://pavan6476252.github.io/guideme/ap_ecet/ap_ecet_subject.json"
+    },
+    {
+      "title": "Question Papers",
+      "subtitle": "some thing about",
+      "image": "https://via.placeholder.com/140x100",
+      "linkType": "common",
+      "link": "https://pavan6476252.github.io/guideme/ap_ecet/question_papers.json"
+    }
+  ]
+}
