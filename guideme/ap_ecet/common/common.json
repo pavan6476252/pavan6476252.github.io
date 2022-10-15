@@ -21,6 +21,13 @@
       "image": "https://via.placeholder.com/140x100",
       "linkType": "common",
       "link": "https://pavan6476252.github.io/guideme/ap_ecet/question_papers.json"
+    },
+    {
+      "title": "Syllabus",
+      "subtitle": "All branches syllabus for available here",
+      "image": "https://via.placeholder.com/140x100",
+      "linkType": "driveLink",
+      "link": "https://cets.apsche.ap.gov.in/ECET/UI/Syllabus.aspx"
     }
   ]
 }
