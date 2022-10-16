@@ -3,7 +3,7 @@
      "content": [
     {
       "title": "youtube",
-      "keyword":["youtube","popular"],
+      "keyword":["popular"],
       "subtitle": "some thin about this",
       "icon": "web",
       "linkType":"googleDrive",
@@ -19,7 +19,7 @@
     },
     {
       "title": "markdown",
-      "keyword":["markdown","newest" ],
+      "keyword":["newest" ],
       "subtitle": "some thin about this",
       "icon": "web",
       "linkType":"markDown",
