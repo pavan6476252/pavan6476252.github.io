@@ -1,5 +1,6 @@
 {
   "title": "Courses",
+  "apiType":"course",
   "content": [
     {
       "title": "AP Ecet",
