@@ -5,7 +5,7 @@
     {
       "title": "B TECH",
       "content": [
-        { "title": "1ST year", "link": "" },
+        { "title": "1ST year", "link": "https://pavan6476252.github.io/viit/content/1st_year.json" },
         { "title": "CSE / IT", "link": "" },
         { "title": "CSM", "link": "" },
         { "title": "MECH", "link": "" },
