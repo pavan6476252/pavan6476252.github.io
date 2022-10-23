@@ -1,0 +1,30 @@
+{
+  "title": "Viit",
+  "image": "http://www.vignaniit.edu.in/images/Logo.jpg",
+  "content": [
+    {
+      "title": "B TECH",
+      "content": [
+        { "title": "1ST year", "link": "" },
+        { "title": "CSE / IT", "link": "" },
+        { "title": "CSM", "link": "" },
+        { "title": "MECH", "link": "" },
+        { "title": "CIVIL", "link": "" },
+        { "title": "ECE", "link": "" },
+        { "title": "EEE", "link": "" }
+      ]
+    },
+    {
+      "title": "Others",
+      "content": [
+        { "title": "1ST year", "link": "" },
+        { "title": "CSE / IT", "link": "" },
+        { "title": "CSM", "link": "" },
+        { "title": "MECH", "link": "" },
+        { "title": "CIVIL", "link": "" },
+        { "title": "ECE", "link": "" },
+        { "title": "EEE", "link": "" }
+      ]
+    }
+  ]
+}
