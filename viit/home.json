@@ -5,13 +5,7 @@
     {
       "title": "B TECH",
       "content": [
-        { "title": "1ST year", "link": "https://pavan6476252.github.io/viit/content/1st_year.json" },
-        { "title": "CSE / IT", "link": "https://pavan6476252.github.io/viit/content/cse.json" },
-        { "title": "CSM", "link": "" },
-        { "title": "MECH", "link": "" },
-        { "title": "CIVIL", "link": "" },
-        { "title": "ECE", "link": "" },
-        { "title": "EEE", "link": "" }
+        { "title": "CSE / IT", "link": "https://pavan6476252.github.io/viit/content/cse.json" }       
       ]
     }
   ]
