@@ -9,7 +9,7 @@
 
 - 📝 I regularly write articles on [https://guideme99.io](https://guideme99.io)
 
-- 💬 Ask me about **Flutter , MEARN Stack**
+- 💬 Ask me about **Flutter , MERN Stack**
 
 - 📫 How to reach me **meesalapavan2003@gmail.com**
 
