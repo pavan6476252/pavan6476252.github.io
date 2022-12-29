@@ -1,9 +1,6 @@
-[
-  {
-    "message" : "new app upgrade patch",
-    "features" : ["feature 1","feature 2"]
-    "update_version" : "1.0.1",
-    "update_date":"29-12-2022"
-  }
- 
-]
+{
+  "message" : "new app upgrade patch",
+  "features" : ["feature 1","feature 2"],
+  "update_version" : "1.0.1",
+  "update_date":"29-12-2022"
+}
