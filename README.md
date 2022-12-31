@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Meesala pavan kumar</h1>
 <h3 align="center">A passionate MERN and Mobile Application Developer</h3>
 
-- 🔭 I’m currently working on [GuideMe99 and MERN Skills](https://github.com/pavan6476252)
+- 🔭 I’m currently working on [VIIT DOCS and MERN Skills](https://github.com/pavan6476252)
 
 - 🌱 I’m currently learning **android dev with jetpacks and kotlin**
 
