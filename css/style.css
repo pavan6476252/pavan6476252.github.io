@@ -46,43 +46,45 @@
   display: flex;
   align-items: center;
 }
-.section1  img {
+.section1 img {
   height: 70vh;
   mix-blend-mode: darken;
   border-radius: 5%;
-
 }
 
-.section1 div{
-    margin: 0 10px;
+.section1 div {
+  margin: 0 10px;
 }
-.section1 .details{
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
+.section1 .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 80vh;
 }
 .section1 .download-cv {
-    width: 150px;
- padding: 10px;
- background-color: teal;
- border: 0 ;
- border-radius: 5px;
-
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  background-color: teal;
+  border: 0;
+  border-radius: 5px;
 }
-
+.section1 .download-cv:hover{
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
 
 /* UTILITY classes */
-.divider{
-    
-    border-bottom: 0.2px solid rgba(0, 0, 0, 0.295);
+.divider {
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.295);
 }
 
-.navbar a{
-    text-decoration: none;
-    color: rgb(102, 100, 100);
+.navbar a {
+  text-decoration: none;
+  color: rgb(102, 100, 100);
 }
-.navbar a:hover{
-   
-    color: white;
+.navbar a:hover {
+  color: white;
 }
