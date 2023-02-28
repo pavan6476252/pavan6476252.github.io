@@ -1,7 +1,8 @@
-import { Box, Flex, Heading, Text, Card, Image, Button } from '@chakra-ui/react';
+import { Box, Flex, Center,Heading, Text, Card, Image, Button } from '@chakra-ui/react';
 
 import { Link } from "react-router-dom";
 import { FaExchangeAlt } from 'react-icons/fa';
+import Microlink from '@microlink/react'
 
 import { LinkPreview } from '@dhaiwat10/react-link-preview';
 import Navbar from '../../utility/navBar';
@@ -71,10 +72,10 @@ function HomePage() {
                 width="full"
                 mt={4}>
 
-              <Link to={tool.link} color="blue.500" isExternal>
-                View Tool
-              </Link>
-                </Button>
+                <Link to={tool.link} color="blue.500" isExternal>
+                  View Tool
+                </Link>
+              </Button>
             </Card>
           ))}
           {/* repositories */}
@@ -82,20 +83,15 @@ function HomePage() {
             Projects
           </Heading>
           {projects.map((project, index) => (
-            <Card key={index} mb={4} p={5}>
-              <LinkPreview
-                openInNewTab={true}
-                cardSize="large"
-                showGraphic={true}
-                maxLine={2}
-                minLine={1}
-                url={project}
-              />
+            <Card key={index} mb={4} p={5} >
+            <Center>
+              <Microlink size='large'  url={project} />
+            </Center>
             </Card>
           ))}
         </Box>
       </Flex>
-      <Footer/>
+      <Footer />
 
     </>
   );
