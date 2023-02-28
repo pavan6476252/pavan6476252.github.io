@@ -5,6 +5,7 @@ import { FaExchangeAlt } from 'react-icons/fa';
 
 import { LinkPreview } from '@dhaiwat10/react-link-preview';
 import Navbar from '../../utility/navBar';
+import Footer from './footer';
 const tools = [
   {
     name: 'Blog Json Generator',
@@ -94,6 +95,8 @@ function HomePage() {
           ))}
         </Box>
       </Flex>
+      <Footer/>
+
     </>
   );
 }

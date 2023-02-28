@@ -21,6 +21,7 @@ import {
 
 import { useState } from 'react';
 import Navbar from '../../utility/navBar';
+import Footer from '../Home/footer';
 
 export default function BlogJsonGenerator() {
   //field states
@@ -174,6 +175,7 @@ export default function BlogJsonGenerator() {
           </Box>
         </Box>
       </Flex>
+      <Footer/>
     </>
   );
 }
