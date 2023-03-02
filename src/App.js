@@ -24,6 +24,7 @@ import ThemeToggler from './utility/themeTogler';
 import HomePage from './pages/Home';
 import Footer from './pages/Home/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ViitJsonMaker from './pages/viitJsonMaker/viit_json_maker';
 
 function App() {
   const [email, setEmail] = useState('');
@@ -79,7 +80,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<HomePage/>}/>
-        <Route exact path='/viitjsonmaker' element={<BlogJsonGenerator/>}/>
+        <Route path='/viitjsonmaker' element={<ViitJsonMaker/>}/>
         <Route  path='/blog-json-generator' element={<BlogJsonGenerator/>}/>
         
       </Routes>
