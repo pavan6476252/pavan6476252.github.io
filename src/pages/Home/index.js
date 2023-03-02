@@ -14,6 +14,12 @@ const tools = [
     link: '/blog-json-generator',
     icon: <FaExchangeAlt />,
   },
+  {
+    name: 'Viit Json Maker',
+    description: 'by using this too we can generate json file that is used by the viit app',
+    link: '/viitjsonmaker',
+    icon: <FaExchangeAlt />,
+  },
 ];
 const projects = [
   'https://github.com/pavan6476252/viit',

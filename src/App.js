@@ -79,6 +79,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<HomePage/>}/>
+        <Route exact path='/viitjsonmaker' element={<BlogJsonGenerator/>}/>
         <Route  path='/blog-json-generator' element={<BlogJsonGenerator/>}/>
         
       </Routes>
