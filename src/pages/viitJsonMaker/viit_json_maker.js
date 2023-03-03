@@ -90,21 +90,15 @@ function ViitJsonMaker() {
   };
 
   const handleSave = () => {
-    const json = JSON.stringify(inputValues);
-    // console.log(json); // Replace this with your own logic to save the JSON data
-
-    // const json = JSON.stringify(inputValues);
-
-    const blob = new Blob([json], { type: 'ViitJsonMakerlication/json' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'data.json';
-    document.body.ViitJsonMakerendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(url);
-    ToastExample();
+    
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(inputValues));
+    var downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href",     dataStr);
+    downloadAnchorNode.setAttribute("download", "viitdocsjson" + ".json");
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove()
+    // ToastExample();
   };
   function ToastExample() {
     const toast = useToast();
