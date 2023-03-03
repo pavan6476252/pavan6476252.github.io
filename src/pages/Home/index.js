@@ -26,8 +26,8 @@ const projects = [
   'https://github.com/pavan6476252/movies_react',
 ];
 const myIntro =
-  'Hello there! As someone who enjoys development and has experience with Android, web development [MERN Stack], and frameworks like React and Flutter, you have a wide range of skills and knowledge in the field of software engineering. You understand the importance of staying up-to-date with the latest technologies and are always eager to learn new things. Your expertise in various areas of development makes you a valuable asset to any team or project, and you have the ability to create high-quality, user-friendly applications that meet the needs of your clients or users. With your passion for development and dedication to delivering excellent results, you are well on your way to a successful career in the software industry.';
-
+ 'Hello there! me someone who enjoys development and has experience with Android, web development [MERN Stack], and frameworks like React and Flutter, I have a wide range of skills and knowledge in the field of software engineering. I understand the importance of staying up-to-date with the latest technologies and am always eager to learn new things. my expertise in various areas of development makes me a valuable asset to any team or project, and I have the ability to create high-quality, user-friendly applications that meet the needs of your clients or users. With my passion for development and dedication to delivering excellent results, you are well on your way to a successful career in the software industry.';
+ 
 function HomePage() {
   return (
     <>
