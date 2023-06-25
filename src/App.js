@@ -16,6 +16,15 @@ function App() {
         theme={dracula}
       
       />;
+      <h1>b tree</h1>
+      <CopyBlock className ='code'
+      
+        text={btree}
+        language={'c'}
+        // showLineNumbers={showLineNumbers}
+        theme={dracula}
+      
+      />;
       <h1>huff man</h1>
       <CopyBlock className ='code'
         text={huffman}
@@ -38,7 +47,135 @@ function App() {
 
 export default App;
 
+const btree=`#include <stdio.h>
+#include <stdlib.h>
 
+#define MAX_KEYS 4
+#define MIN_KEYS ((MAX_KEYS + 1) / 2 - 1)
+
+typedef struct node {
+    int num_keys;
+    int keys[MAX_KEYS];
+    struct node* children[MAX_KEYS + 1];
+    struct node* parent;
+    int is_leaf;
+} Node;
+
+Node* create_node() {
+    Node* new_node = (Node*)malloc(sizeof(Node));
+    new_node->num_keys = 0;
+    new_node->parent = NULL;
+    new_node->is_leaf = 1;
+    for (int i = 0; i < MAX_KEYS + 1; i++) {
+        new_node->children[i] = NULL;
+    }
+    return new_node;
+}
+
+void insert_non_full(Node* node, int key) {
+    int i = node->num_keys - 1;
+    if (node->is_leaf) {
+        while (i >= 0 && node->keys[i] > key) {
+            node->keys[i + 1] = node->keys[i];
+            i--;
+        }
+        node->keys[i + 1] = key;
+        node->num_keys++;
+    } else {
+        while (i >= 0 && node->keys[i] > key) {
+            i--;
+        }
+        i++;
+        if (node->children[i]->num_keys == MAX_KEYS) {
+            split_child(node, i, node->children[i]);
+            if (node->keys[i] < key) {
+                i++;
+            }
+        }
+        insert_non_full(node->children[i], key);
+    }
+}
+
+void split_child(Node* parent, int index, Node* child) {
+    Node* new_node = create_node();
+    new_node->is_leaf = child->is_leaf;
+    new_node->num_keys = MIN_KEYS;
+
+    for (int j = 0; j < MIN_KEYS; j++) {
+        new_node->keys[j] = child->keys[j + MIN_KEYS];
+    }
+
+    if (!child->is_leaf) {
+        for (int j = 0; j < MIN_KEYS + 1; j++) {
+            new_node->children[j] = child->children[j + MIN_KEYS];
+        }
+    }
+
+    child->num_keys = MIN_KEYS;
+    for (int j = parent->num_keys; j >= index + 1; j--) {
+        parent->children[j + 1] = parent->children[j];
+    }
+    parent->children[index + 1] = new_node;
+    for (int j = parent->num_keys - 1; j >= index; j--) {
+        parent->keys[j + 1] = parent->keys[j];
+    }
+    parent->keys[index] = child->keys[MIN_KEYS];
+    parent->num_keys++;
+}
+
+void insert(Node** root, int key) {
+    Node* root_node = *root;
+    if (root_node == NULL) {
+        Node* new_root = create_node();
+        new_root->keys[0] = key;
+        new_root->num_keys = 1;
+        *root = new_root;
+    } else {
+        if (root_node->num_keys == MAX_KEYS) {
+            Node* new_root = create_node();
+            new_root->children[0] = root_node;
+            new_root->is_leaf = 0;
+            *root = new_root;
+            split_child(new_root, 0, root_node);
+            insert_non_full(new_root, key);
+        } else {
+            insert_non_full(root_node, key);
+        }
+    }
+}
+
+void print_tree(Node* node) {
+    if (node != NULL) {
+        for (int i = 0; i < node->num_keys; i++) {
+            printf("%d ", node->keys[i]);
+        }
+        printf("\n");
+        if (!node->is_leaf) {
+            for (int i = 0; i <= node->num_keys; i++) {
+                print_tree(node->children[i]);
+            }
+        }
+    }
+}
+
+int main() {
+    Node* root = NULL;
+
+    insert(&root, 8);
+    insert(&root, 12);
+    insert(&root, 15);
+    insert(&root, 4);
+    insert(&root, 6);
+    insert(&root, 7);
+    insert(&root, 2);
+    insert(&root, 18);
+    insert(&root, 20);
+
+    print_tree(root);
+
+    return 0;
+}
+`
 const huffman =`#include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
